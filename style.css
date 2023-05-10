@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+body {
+    background-color: #25262d;
+}
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+textarea {
+    resize: none;
+}
+.header {
+    color: white;
+    margin: 40px 0;
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form__input {
+    margin: 10px 0;
+    padding: 5px;
+}
+.btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn {
+    transition: 0.3s;
+    padding: 8px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #52535f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #25262d;
+    color: white;
+}
+.btn_white {
+    border: 1px solid #696b7c;
+    background-color: white;
+    color: #25262d;
+}
+.btn_white:hover {
+    background-color: #25262d;
+    color: white;
+}
+.error {
+    border: 1px solid red;
+}
+.errorMassage {
+    margin: 10px 0 20px 0;
+    display: none;
+    text-align: center;
+    color: red;
+}
+.active {
+    display: block;
+}

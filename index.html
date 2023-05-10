@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<h1 class="header">Бронирование переговорной</h1>
+<main class="main">
+    <form novalidate class="form" id="form" action="#">
+        <label for="tower">Башня</label>
+        <select id="tower" name="tower" class="form__input" required>
+            <option value="0" disabled selected hidden>Выберете башню</option>
+            <option value="А">Башня А</option>
+            <option value="Б">Башня Б</option>
+        </select>
+        <label for="floor">Этаж</label>
+        <select id="floor" name="floor" class="form__input">
+            <option value="" disabled selected hidden>Выберете этаж</option>
+            <option value="3">Этаж 3</option>
+            <option value="4">Этаж 4</option>
+            <option value="5">Этаж 5</option>
+            <option value="6">Этаж 6</option>
+            <option value="7">Этаж 7</option>
+            <option value="8">Этаж 8</option>
+            <option value="9">Этаж 9</option>
+            <option value="10">Этаж 10</option>
+            <option value="11">Этаж 11</option>
+            <option value="12">Этаж 12</option>
+            <option value="13">Этаж 13</option>
+            <option value="14">Этаж 14</option>
+            <option value="15">Этаж 15</option>
+            <option value="16">Этаж 16</option>
+            <option value="17">Этаж 17</option>
+            <option value="18">Этаж 18</option>
+            <option value="19">Этаж 19</option>
+            <option value="20">Этаж 20</option>
+            <option value="21">Этаж 21</option>
+            <option value="22">Этаж 22</option>
+            <option value="23">Этаж 23</option>
+            <option value="24">Этаж 24</option>
+            <option value="25">Этаж 25</option>
+            <option value="26">Этаж 26</option>
+            <option value="27">Этаж 27</option>
+        </select>
+        <label for="room">Переговорная</label>
+        <select id="room" name="room" class="form__input">
+            <option value="" disabled selected hidden
+            >Выберете переговорную</option
+            >
+            <option value="1">Переговорная №1</option>
+            <option value="2">Переговорная №2</option>
+            <option value="3">Переговорная №3</option>
+            <option value="4">Переговорная №4</option>
+            <option value="5">Переговорная №5</option>
+            <option value="6">Переговорная №6</option>
+            <option value="7">Переговорная №7</option>
+            <option value="8">Переговорная №8</option>
+            <option value="9">Переговорная №9</option>
+            <option value="10">Переговорная №10</option>
+        </select>
+        <label for="date">Дата</label>
+        <input
+                id="date"
+                name="date"
+                class="form__input"
+                type="date"
+        />
+        <label for="date">Время начала</label>
+        <input
+                id="timeStart"
+                name="timeStart"
+                class="form__input"
+                type="time"
+        />
+        <label for="date">Время окончания</label>
+        <input
+                id="timeEnd"
+                name="timeEnd"
+                class="form__input"
+                type="time"
+        />
+        <label for="description">Комментарий</label>
+        <textarea id="description" name="description" class="form__input" rows="7"></textarea>
+    </form>
+    <span class="errorMassage" id="errorMassage">Выделенные поля указаны неверно</span>
+    <div class="btns">
+        <button form="form" class="btn">Отправить</button>
+        <button id="btnClearForm" class="btn btn_white">Очистить</button>
+    </div>
+</main>
+<script src="./index.js"></script>
+</body>
+</html>
